@@ -10,7 +10,7 @@ function View(){
     }
 
     const saveText = () => {
-        axios.post("http://localhost:3002/data",
+        axios.post("http://localhost:3001/data",
             {id:new Date().toISOString().slice(0, 10), text}
         )
         .then(()=>{
