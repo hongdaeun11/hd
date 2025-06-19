@@ -6,7 +6,7 @@ function Four(){
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        axios.get("http://localhost:3002/data")
+        axios.get("http://localhost:3001/data")
         .then((response)=>{
             setData(response.data)
         })
